@@ -1,0 +1,32 @@
+body {
+  background-color: #FDF6E3;
+  color: #444;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 40px auto;
+  max-width: 650px;
+  padding: 0 10px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  text-align: center;
+}
+
+div.body {
+  border-top: solid darkgrey 1px;
+}
+
+td {
+  padding-right: 15px;
+  vertical-align: top;
+}
+
+.css-serial {
+  counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number);  /* Display the counter */
+}
